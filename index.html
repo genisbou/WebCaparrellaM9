@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Fonts i icones -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Estils propis -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+        <!-- Botó menú mòbil -->
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-green"
+           href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">
+            <img src="Media/logo.webp" id="logo" alt="logo">
+        </a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">EL CENTRE</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <a class="w3-button w3-padding-large">SECRETARIA <i class="fa fa-caret-down"></i></a>
+            <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">Preinscripció i matrícula</a>
+                <a href="tramitacio_titols.html" class="w3-bar-item w3-button">Tramitació de títols</a>
+                <a href="llibres_de_text.html" class="w3-bar-item w3-button">Llibres de text</a>
+                <a href="calendari_escolar.html" class="w3-bar-item w3-button">Calendari escolar</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <a class="w3-button w3-padding-large">ESTUDIS <i class="fa fa-caret-down"></i></a>
+            <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">ESO</a>
+                <a href="tramitacio_titols.html" class="w3-bar-item w3-button">BATXILLERAT</a>
+                <a href="llibres_de_text.html" class="w3-bar-item w3-button">CICLES</a>
+                <a href="calendari_escolar.html" class="w3-bar-item w3-button">FP BÀSICA</a>
+                <a href="pfi.html" class="w3-bar-item w3-button">PFI</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <a class="w3-button w3-padding-large">PLATAFORMES <i class="fa fa-caret-down"></i></a>
+            <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">Moodle</a>
+                <a href="tramitacio_titols.html" class="w3-bar-item w3-button">iEduca</a>
+                <a href="llibres_de_text.html" class="w3-bar-item w3-button">SAGA</a>
+                <a href="calendari_escolar.html" class="w3-bar-item w3-button">Esfera</a>
+            </div>
+        </div>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">TRANSPORT</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CONTACTE</a>
+
+
+        <!-- Xarxes socials -->
+        <a href="https://www.facebook.com/iescaparrella" class="fa fa-facebook" style="margin-right: -10px; color: black;"></a>
+        <a href="https://twitter.com/iescaparrella" class="fa fa-twitter" style="margin-right: -10px; color:black"></a>
+        <a href="https://www.instagram.com/iescaparrella/" class="fa fa-instagram" style="margin-right: -10px; color:black;"></a>
+        <a href="https://www.youtube.com/channel/UC9J6J9Z9Z9J9J9J9" class="fa fa-youtube-play" style="margin-left: 13px;"></a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">Preinscripció i matrícula</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large"><strong>Secretaria</strong></a>
+        <div style="padding-left: 20px;">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">El centre</a>
+            <a href="tramitacio_titols.html" class="w3-bar-item w3-button">Tramitació de títols</a>
+            <a href="llibres_de_text.html" class="w3-bar-item w3-button">Llibres de text</a>
+            <a href="calendari_escolar.html" class="w3-bar-item w3-button">Calendari escolar</a>
+        </div>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large"><strong>Estudis</strong></a>
+        <div style="padding-left: 20px;">
+            <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">ESO</a>
+            <a href="tramitacio_titols.html" class="w3-bar-item w3-button">BATXILLERAT</a>
+            <a href="llibres_de_text.html" class="w3-bar-item w3-button">CICLES</a>
+            <a href="calendari_escolar.html" class="w3-bar-item w3-button">FP BÀSICA</a>
+            <a href="pfi.html" class="w3-bar-item w3-button">PFI</a>
+        </div>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large"><strong>Plataformes</strong></a>
+        <div style="padding-left: 20px;">
+            <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">Moodle</a>
+            <a href="tramitacio_titols.html" class="w3-bar-item w3-button">iEduca</a>
+            <a href="llibres_de_text.html" class="w3-bar-item w3-button">SAGA</a>
+            <a href="calendari_escolar.html" class="w3-bar-item w3-button">Esfera</a>
+        </div>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">TRANSPORT</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">CONTACTE</a>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:1px 10px">
+    <img src="Media/Institut_Caparrella.jpg" class="w3-round" alt="Norway" id="banner">
+</header>
+
+<div class="w3-container w3-center">
+    <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">El centre</button>
+    <button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Preinscripció i matrícula</button>
+    <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Calendari escolar</button>
+    <div class="w3-container w3-center">
+        <button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Llibres de text</button>
+        <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Tramitació de títols</button>
+        <button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Transport escolar</button>
+    </div>
+</div>
+
+<!-- First Grid - Versió Millorada -->
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <div class="w3-center">
+            <h1 class="w3-xxlarge">Els Nostres Estudis</h1>
+            <p class="w3-large">Oferim una formació integral adaptada a les necessitats de cada alumne</p>
+        </div>
+
+        <div class="w3-row-padding w3-margin-top">
+            <!-- ESO -->
+            <div class="w3-quarter">
+                <a href="eso.html" class="w3-card w3-hover-shadow" style="text-decoration:none">
+                    <div class="w3-container w3-center w3-padding-16 w3-blue">
+                        <i class="fa fa-book w3-jumbo"></i>
+                        <h3>ESO</h3>
+                    </div>
+                    <div class="w3-container w3-white w3-padding-16">
+                        <p>Educació Secundària Obligatòria per a joves de 12 a 16 anys</p>
+                        <ul class="w3-ul w3-small">
+                            <li>1r a 4t d'ESO</li>
+                            <li>Opcions diversificació</li>
+                            <li>Programes d'orientació</li>
+                        </ul>
+                        <button class="w3-button w3-blue w3-block">Més informació</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Batxillerat -->
+            <div class="w3-quarter">
+                <a href="batxillerat.html" class="w3-card w3-hover-shadow" style="text-decoration:none">
+                    <div class="w3-container w3-center w3-padding-16 w3-green">
+                        <i class="fa fa-graduation-cap w3-jumbo"></i>
+                        <h3>Batxillerat</h3>
+                    </div>
+                    <div class="w3-container w3-white w3-padding-16">
+                        <p>Preparació per a l'accés a la universitat i cicles superiors</p>
+                        <ul class="w3-ul w3-small">
+                            <li>Modalitat Ciències</li>
+                            <li>Modalitat Humanitats</li>
+                            <li>Modalitat Ciències Socials</li>
+                        </ul>
+                        <button class="w3-button w3-green w3-block">Més informació</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Cicles Formatius -->
+            <div class="w3-quarter">
+                <a href="cicles.html" class="w3-card w3-hover-shadow" style="text-decoration:none">
+                    <div class="w3-container w3-center w3-padding-16 w3-orange">
+                        <i class="fa fa-laptop w3-jumbo"></i>
+                        <h3>Cicles</h3>
+                    </div>
+                    <div class="w3-container w3-white w3-padding-16">
+                        <p>Formació professional especialitzada en diferents àrees</p>
+                        <ul class="w3-ul w3-small">
+                            <li>Grau Mitjà</li>
+                            <li>Grau Superior</li>
+                            <li>Dual</li>
+                        </ul>
+                        <button class="w3-button w3-orange w3-block">Més informació</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- FP Bàsica -->
+            <div class="w3-quarter">
+                <a href="fpbasica.html" class="w3-card w3-hover-shadow" style="text-decoration:none">
+                    <div class="w3-container w3-center w3-padding-16 w3-red">
+                        <i class="fa fa-wrench w3-jumbo"></i>
+                        <h3>FP Bàsica</h3>
+                    </div>
+                    <div class="w3-container w3-white w3-padding-16">
+                        <p>Formació professional inicial per a joves de 15 a 17 anys</p>
+                        <ul class="w3-ul w3-small">
+                            <li>Accés a la fp bàsica</li>
+                            <li>Titulació i sortides</li>
+                            <li>Grau bàsic Informàtica</li>
+                        </ul>
+                        <button class="w3-button w3-red w3-block">Més informació</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- PFI i altres programes -->
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-half">
+                <a href="pfi.html" class="w3-card w3-hover-shadow" style="text-decoration:none">
+                    <div class="w3-container w3-center w3-padding-16 w3-teal">
+                        <i class="fa fa-briefcase w3-jumbo"></i>
+                        <h3>PFI</h3>
+                    </div>
+                    <div class="w3-container w3-white w3-padding-16">
+                        <p>Programes de Formació i Inserció per a joves</p>
+                        <ul class="w3-ul w3-small">
+                            <li>Orientació laboral</li>
+                            <li>Formació específica</li>
+                            <li>Pràctiques en empresa</li>
+                        </ul>
+                        <button class="w3-button w3-teal w3-block">Més informació</button>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-half">
+                <a href="altres-programes.html" class="w3-card w3-hover-shadow" style="text-decoration:none">
+                    <div class="w3-container w3-center w3-padding-16 w3-teal">
+                        <i class="fa fa-globe w3-jumbo"></i>
+                        <h3>Altres Programes</h3>
+                    </div>
+                    <div class="w3-container w3-white w3-padding-16">
+                        <p>Oferta complementària de formació</p>
+                        <ul class="w3-ul w3-small">
+                            <li>Intercanvis internacionals</li>
+                            <li>Activitats extraescolars</li>
+                            <li>Programes especials</li>
+                        </ul>
+                        <button class="w3-button w3-teal w3-block">Més informació</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Second Grid  -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container" >
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h1>Accés directe</h1>
+            <h5 class="w3-padding-32">
+                Portals i recursos essencials per a la comunitat educativa
+            </h5>
+
+            <div class="w3-row-padding w3-margin-top">
+                <!-- Targeta Alumnat -->
+                <div class="w3-third">
+                    <a href="alumnat.html" class="w3-card w3-hover-shadow" style="text-decoration:none">
+                        <div class="w3-container w3-center w3-padding-16 w3-blue">
+                            <i class="fa fa-graduation-cap w3-jumbo"></i>
+                            <h3>Alumnat</h3>
+                        </div>
+                        <div class="w3-container w3-white w3-padding-16">
+                            <p>Plataformes i recursos específics per als alumnes</p>
+                            <div class="w3-left-align">
+                                <span class="w3-tag w3-light-grey">Moodle</span>
+                                <span class="w3-tag w3-light-grey">iEduca</span>
+                                <span class="w3-tag w3-light-grey">Horaris</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Targeta Famílies -->
+                <div class="w3-third">
+                    <a href="families.html" class="w3-card w3-hover-shadow" style="text-decoration:none">
+                        <div class="w3-container w3-center w3-padding-16 w3-green">
+                            <i class="fa fa-users w3-jumbo"></i>
+                            <h3>Famílies</h3>
+                        </div>
+                        <div class="w3-container w3-white w3-padding-16">
+                            <p>Recursos i informació per a pares i tutors</p>
+                            <div class="w3-left-align">
+                                <span class="w3-tag w3-light-grey">Comunicació</span>
+                                <span class="w3-tag w3-light-grey">Matrícula</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Targeta Professorat -->
+                <div class="w3-third">
+                    <a href="professorat.html" class="w3-card w3-hover-shadow" style="text-decoration:none">
+                        <div class="w3-container w3-center w3-padding-16 w3-gray">
+                            <i class="fa fa-user-secret w3-jumbo"></i>
+                            <h3>Professorat</h3>
+                        </div>
+                        <div class="w3-container w3-white w3-padding-16">
+                            <p> Plataformes i recursos per al professorat</p>
+                            <div class="w3-left-align">
+                                <span class="w3-tag w3-light-grey">SAGA</span>
+                                <span class="w3-tag w3-light-grey">Esfera</span>
+                                <span class="w3-tag w3-light-grey">Documents</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third w3-center">
+            <i class="fa fa-external-link w3-padding-64 w3-text-gray w3-jumbo"></i>
+            <h3>Enllaços Ràpids</h3>
+            <div class="w3-panel w3-blue w3-card">
+                <a href="calendari.html" class="w3-button w3-block w3-left-align">Calendari escolar</a>
+                <a href="biblioteca.html" class="w3-button w3-block w3-left-align">Biblioteca</a>
+                <a href="transport.html" class="w3-button w3-block w3-left-align">Transport</a>
+                <a href="activitats.html" class="w3-button w3-block w3-left-align">Activitats</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Secció de Cursos Populars -->
+<div class="w3-container w3-padding-64 w3-light-blue">
+    <div class="w3-content">
+        <h2 class="w3-center w3-text-white">Cursos Populars</h2>
+        <p class="w3-center w3-large w3-text-white">Descobreix els nostres cursos més sol·licitats</p>
+        <div class="w3-row-padding w3-margin-top">
+            <!-- Curs 1 -->
+            <div class="w3-quarter">
+                <div class="w3-card-4 w3-margin w3-hover-shadow-large">
+                    <img src="Media/curso1.jpg" alt="Curs 1" style="width:100%; height: 250px; object-fit: cover;">
+                    <div class="w3-container w3-blue w3-padding-16">
+                        <h4 class="w3-center">Curs de Programació Web</h4>
+                        <p class="w3-center">Aprèn a crear llocs web interactius amb HTML, CSS i JavaScript.</p>
+                    </div>
+                    <div class="w3-container w3-center">
+                        <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Més informació</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curs 2 -->
+            <div class="w3-quarter">
+                <div class="w3-card-4 w3-margin w3-hover-shadow-large">
+                    <img src="Media/curso2.jpg" alt="Curs 2" style="width:100%; height: 250px; object-fit: cover;">
+                    <div class="w3-container w3-blue w3-padding-16">
+                        <h4 class="w3-center">Curs de Disseny Gràfic</h4>
+                        <p class="w3-center">Aprèn les tècniques de disseny gràfic utilitzant eines professionals com Photoshop i Illustrator.</p>
+                    </div>
+                    <div class="w3-container w3-center">
+                        <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Més informació</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curs 3 -->
+            <div class="w3-quarter">
+                <div class="w3-card-4 w3-margin w3-hover-shadow-large">
+                    <img src="Media/curso3.jpg" alt="Curs 3" style="width:100%; height: 250px; object-fit: cover;">
+                    <div class="w3-container w3-blue w3-padding-16">
+                        <h4 class="w3-center">Curs de Manteniment de vehicles</h4>
+                        <p class="w3-center">Aprèn a diagnosticar i reparar vehicles amb formació pràctica i teòrica.</p>
+
+                    </div>
+                    <div class="w3-container w3-center">
+                        <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Més informació</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Curs 4 -->
+            <div class="w3-quarter">
+                <div class="w3-card-4 w3-margin w3-hover-shadow-large">
+                    <img src="Media/curso4.jpg" alt="Curs 4" style="width:100%; height: 250px; object-fit: cover;">
+                    <div class="w3-container w3-blue w3-padding-16">
+                        <h4 class="w3-center">Curs de Fotografia</h4>
+                        <p class="w3-center">Domina les tècniques de la fotografia digital, des de la composició fins a l'edició.</p>
+                    </div>
+                    <div class="w3-container w3-center">
+                        <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Més informació</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w3-container w3-white w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Actualitat del centre</h1>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+    <!-- Noticia 1 -->
+    <div class="w3-third">
+        <div class="w3-card-4 w3-margin w3-white">
+            <img src="/Media/daily_news.jpg" alt="Noticia 1" style="width:100%; height:150px; object-fit:cover;">
+            <div class="w3-container">
+                <h4><b>Noticia 1</b></h4>
+                <h6>Descripció breu, <span class="w3-opacity">Gener 2025</span></h6>
+                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus...</p>
+                <button class="w3-button w3-padding-small w3-white w3-border"><b>Llegeix més »</b></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Noticia 2 -->
+    <div class="w3-third">
+        <div class="w3-card-4 w3-margin w3-white">
+            <img src="/Media/daily_news.jpg" alt="Noticia 2" style="width:100%; height:150px; object-fit:cover;">
+            <div class="w3-container">
+                <h4><b>Noticia 2</b></h4>
+                <h6>Descripció breu, <span class="w3-opacity">Gener 2025</span></h6>
+                <p>Vivamus porttitor magna enim, ac accumsan tortor cursus at...</p>
+                <button class="w3-button w3-padding-small w3-white w3-border"><b>Llegeix més »</b></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Noticia 3 -->
+    <div class="w3-third">
+        <div class="w3-card-4 w3-margin w3-white">
+            <img src="/Media/daily_news.jpg" alt="Noticia 3" style="width:100%; height:150px; object-fit:cover;">
+            <div class="w3-container">
+                <h4><b>Noticia 3</b></h4>
+                <h6>Descripció breu, <span class="w3-opacity">Gener 2025</span></h6>
+                <p>Phasellus sed ultricies mi non congue ullamcorper at...</p>
+                <button class="w3-button w3-padding-small w3-white w3-border"><b>Llegeix més »</b></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w3-container w3-center">
+    <button class="w3-button w3-gray w3-padding-large w3-large w3-margin-top">Visita el blog</button>
+</div>
+
+<br><br>
+
+<!-- Certificació ISO -->
+<div class="w3-container w3-center" style="display: flex; justify-content: center; align-items: center;">
+    <img src="Media/certificacio-iso.png" alt="ISO 9001" style="width: 15%; height: 100%; object-fit: cover;">
+    <div class="w3-container w3-cell">
+        <h3>CERTIFICACIÓ ISO 9001</h3>
+        <p class="justified-text-iso" style="line-height: 1.2;">Gràcies a la implantació d'un Sistema de Gestió de la</p>
+        <p class="justified-text-iso" style="line-height: 1.2;">Qualitat segons la norma UNE_EN ISO 9001,</p>
+        <p class="justified-text-iso" style="line-height: 1.2;">L'organització demostra la seva capacitat per </p>
+        <p class="justified-text-iso" style="line-height: 1.2;">proporcionar de forma coherent productes o serveis</p>
+        <p class="justified-text-iso" style="line-height: 1.2;">Que satisfan els requisits del client i els reglamentaris</p>
+        <p class="justified-text-iso" style="line-height: 1.2;">aplicables.</p>
+    </div>
+</div>
+<br>
+
+
+<div class="w3-container justified-text">
+    <p>
+        Acció finançada pel Ministeri d'Educació, Formació Professional i Esports i per la Unió Europea -NextGenerationUE en el marc del Mecanisme de Recuperació i Resiliència.
+    </p>
+</div>
+
+<!-- Imatges de patrocini center -->
+<div class="w3-container w3-center" style="display: flex; justify-content: center; align-items: center;">
+    <img src="Media/next_generation.png" alt="ISO 9001" style="width: 10%; height: 100%; object-fit: cover;">
+    <img src="Media/gobierno-de-españa.png" alt="gobierno-españa" style="width: 10%; height: 100%; object-fit: cover;">
+    <img src="Media/pla-recuperacio.png" alt="pla-recuperacio" style="width: 10%; height: 100%; object-fit: cover;">
+    <img src="Media/NextGenerationCatalunya.png" alt="NextGenerationCatalunya" style="width: 10%; height: 100%; object-fit: cover;">
+    <img src="Media/Generalitat-catalunya.png" alt="Generalitat-catalunya" style="width: 10%; height: 100%; object-fit: cover;">
+</div>
+<br>
+
+<div class="w3-container justified-text">
+    <strong>
+        C20.103 Innovació i internacionalització de la Formació Professional
+    </strong>
+    <p>
+        La mesura C20.103 Innovació i internacionalització de la Formació Professional té un pes assignat de 0%
+        de coeficient de clima i de 0% de coeficient digital, de conformitat amb l'annex 6 Taula de seguiment per a l'acció pel clima i l'etiquetatge digital
+        de la Proposta de Decisió d'Execució del Consell relativa a l'aprovació de l'avaluació del PRTR d'Espanya
+        COM (2021) 322 final, en data 16 de juny de 2021.
+    </p>
+
+</div>
+
+<br>
+<!-- Imatges de patrocini addicionals center -->
+<div class="w3-container w3-center" style="display: flex; justify-content: center; align-items: center;">
+    <img src="Media/Logo_Cofinancat-per-la-UE.jpg" alt="ISO 9001" style="width: 10%; height: 100%; object-fit: cover;">
+    <img src="Media/departament-educacio-fp.jpg" alt="gobierno-españa" style="width: 10%; height: 100%; object-fit: cover;">
+</div>
+
+<div class="w3-container justified-text">
+    <p>
+        AQUEST CENTRE PARTICIPA DURANT EL CURS 2024/2025 EN EL PROGRAMA "ORIENTACIÓ EDUCATIVA EN CENTRES DE
+        FORMACIÓ PROFESSIONAL" CONFINANÇAT PER LA UNIÓ EUROPEA EN EL MARC DEL PROGRAMA DEL FSE+ DE CATALUNYA 2021/2027
+    </p>
+</div>
+
+
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-gray">
+    <div class="w3-center">
+        <p>© 2025 IES Caparrella</p>
+        <i class="fa fa-map-marker"></i>&nbsp; Partida Caparrella, 98, 25192 Lleida |&nbsp;
+        <i class="fa fa-phone"></i>&nbsp; 973 28 81 80
+        <p><i class="fa fa-envelope"></i>&nbsp; iescaparrella@iescaparrella.cat</p>
+        <a href="https://www.facebook.com/iescaparrella" class="fa fa-facebook" style="margin-right: -10px;"></a>
+        <a href="https://twitter.com/iescaparrella" class="fa fa-twitter" style="margin-right: -10px;"></a>
+        <a href="https://www.instagram.com/iescaparrella/" class="fa fa-instagram" style="margin-right: -10px;"></a>
+        <a href="https://www.youtube.com/channel/UC9J6J9Z9Z9J9J9J9" class="fa fa-youtube-play" style="margin-left: 13px; color: white;"></a>
+        <p>
+            <a href="avis_legal.html" class="w3-bar-item w3-button w3-padding-large">AVIS LEGAL</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+</body>
+</html>
