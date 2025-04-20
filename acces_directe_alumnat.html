@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .fa-folder-open .fa-book {font-size:30px}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">INICI</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">EL CENTRE</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <a class="w3-button w3-padding-large">SECRETARIA <i class="fa fa-caret-down"></i></a>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">Preinscripció i matrícula</a>
+        <a href="tramitacio_titols.html" class="w3-bar-item w3-button">Tramitació de títols</a>
+        <a href="llibres_de_text.html" class="w3-bar-item w3-button">Llibres de text</a>
+        <a href="calendari_escolar.html" class="w3-bar-item w3-button">Calendari escolar</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <a class="w3-button w3-padding-large">ESTUDIS <i class="fa fa-caret-down"></i></a>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">ESO</a>
+        <a href="tramitacio_titols.html" class="w3-bar-item w3-button">BATXILLERAT</a>
+        <a href="llibres_de_text.html" class="w3-bar-item w3-button">CICLES</a>
+        <a href="calendari_escolar.html" class="w3-bar-item w3-button">FP BÀSICA</a>
+        <a href="pfi.html" class="w3-bar-item w3-button">PFI</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <a class="w3-button w3-padding-large">PLATAFORMES <i class="fa fa-caret-down"></i></a>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">Moodle</a>
+        <a href="tramitacio_titols.html" class="w3-bar-item w3-button">iEduca</a>
+        <a href="llibres_de_text.html" class="w3-bar-item w3-button">SAGA</a>
+        <a href="calendari_escolar.html" class="w3-bar-item w3-button">Esfera</a>
+
+      </div>
+    </div>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">TRANSPORT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CONTACTE</a>
+    <a href="index.html"><img src="Media/logo.webp" id="logo" alt="logo"></a>
+
+
+    <a href="https://www.facebook.com/iescaparrella" class="fa fa-facebook" style="margin-right: -10px; color: black;"></a>
+    <a href="https://twitter.com/iescaparrella" class="fa fa-twitter" style="margin-right: -10px; color:black"></a>
+    <a href="https://www.instagram.com/iescaparrella/" class="fa fa-instagram" style="margin-right: -10px; color:black;"></a>
+    <a href="https://www.youtube.com/channel/UC9J6J9Z9Z9J9J9J9" class="fa fa-youtube-play" style="margin-left: 13px;"></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">Preinscripció i matrícula</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"><strong>Secretaria</strong></a>
+    <div style="padding-left: 20px;">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">El centre</a>
+      <a href="tramitacio_titols.html" class="w3-bar-item w3-button">Tramitació de títols</a>
+      <a href="llibres_de_text.html" class="w3-bar-item w3-button">Llibres de text</a>
+      <a href="calendari_escolar.html" class="w3-bar-item w3-button">Calendari escolar</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"><strong>Estudis</strong></a>
+    <div style="padding-left: 20px;">
+      <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">ESO</a>
+      <a href="tramitacio_titols.html" class="w3-bar-item w3-button">BATXILLERAT</a>
+      <a href="llibres_de_text.html" class="w3-bar-item w3-button">CICLES</a>
+      <a href="calendari_escolar.html" class="w3-bar-item w3-button">FP BÀSICA</a>
+      <a href="pfi.html" class="w3-bar-item w3-button">PFI</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"><strong>Plataformes</strong></a>
+    <div style="padding-left: 20px;">
+      <a href="preinscripcio_i_matricula.html" class="w3-bar-item w3-button">Moodle</a>
+      <a href="tramitacio_titols.html" class="w3-bar-item w3-button">iEduca</a>
+      <a href="llibres_de_text.html" class="w3-bar-item w3-button">SAGA</a>
+      <a href="calendari_escolar.html" class="w3-bar-item w3-button">Esfera</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">TRANSPORT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">CONTACTE</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container  w3-center" style="padding:50px 10px">
+  <img src="Media/Institut_Caparrella.jpg" class="w3-round" alt="Norway" id="banner">
+</header>
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <h1>Accés directe alumnat</h1>
+    <h5 class="w3-padding-32">
+      Accedeix directament a les plataformes i a la informació per a l'alumnat.
+    </h5>
+
+    <!-- Grid Layout -->
+    <div class="w3-row-padding w3-center">
+      <!-- Primera fila -->
+      <div class="w3-quarter w3-margin-bottom icon-container">
+        <button class="w3-button w3-large w3-margin-top">
+          <img src="Media/LOGO-IEDUCA.jpg" alt="Icono Alumnat" style="width: 70px; height: 70px; object-fit: cover;">
+          <br>iEduca<br>Gestió acadèmica
+        </button>
+      </div>
+      <div class="w3-quarter w3-margin-bottom icon-container">
+        <button class="w3-button w3-large w3-margin-top">
+          <img src="Media/moodle_logo.pmg.webp" alt="Icono Alumnat" style="width: 70px; height: 70px; object-fit: cover;">
+          <br>Moodle<br>Entorn d'aprenentatge
+        </button>
+      </div>
+      <div class="w3-quarter w3-margin-bottom icon-container">
+        <button class="w3-button w3-large w3-margin-top">
+          <img src="Media/sbid.png" alt="Icono Alumnat" style="width: 70px; height: 70px; object-fit: cover;">
+          <br>sBid<br>Seguiment FCT
+        </button>
+      </div>
+      <div class="w3-quarter w3-margin-bottom icon-container">
+        <button class="w3-button w3-large w3-margin-top">
+          <img src="Media/calendari.jpg" alt="Icono Alumnat" style="width: 70px; height: 70px; object-fit: cover;">
+          <br>Calendari<br>Calendari escolar
+        </button>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-center">
+      <!-- Segona fila -->
+      <div class="w3-quarter w3-margin-bottom icon-container">
+        <button class="w3-button w3-large w3-margin-top">
+          <img src="Media/llibres.png" alt="Icono Alumnat" style="width: 70px; height: 70px; object-fit: cover;">
+          <br>Llibres<br>Llibres de text
+        </button>
+      </div>
+      <div class="w3-quarter w3-margin-bottom icon-container">
+        <button class="w3-button w3-large w3-margin-top">
+          <img src="Media/secretaria.png" alt="Icono Alumnat" style="width: 70px; height: 70px; object-fit: cover;">
+          <br>Secretaria<br>Tràmits i documents
+        </button>
+      </div>
+      <div class="w3-quarter w3-margin-bottom icon-container">
+        <button class="w3-button w3-large w3-margin-top">
+          <img src="Media/gmail.png" alt="Icono Alumnat" style="width: 70px; height: 70px; object-fit: cover;">
+          <br>Gmail<br>Correu electrònic
+        </button>
+    </div>
+
+    <div class="w3-third w3-center">
+      <!--            icon education-->
+<!--      <i class="fa fa-graduation-cap w3-padding-64 w3-text-gray"></i>-->
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <h2>Seccions destacades</h2>
+    <br>
+    <br>
+      <div class="w3-third w3-center">
+
+        <i class="fa fa-folder-open">
+          Recursos
+        </i>
+        <p>Explora recursos addicionals per ampliar els teus coneixements</p>
+        </div>
+        <div class="w3-third w3-center">
+            <i class="fa fa-book">
+                Biblioteca
+            </i>
+            <p>Consulta el catàleg de la biblioteca i reserva llibres</p>
+        </div>
+    <div class="w3-third w3-center">
+      <i class="fa fa-lightbulb-o">
+        Innovació
+      </i>
+      <p>Descobreix els projectes innovadors que es duen a terme a l'institut</p>
+    </div>
+
+
+<!--    <div class="w3-third w3-center">-->
+<!--      <i class="fa fa-link w3-padding-64 w3-text-gray"></i>-->
+<!--    </div>-->
+
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-gray">
+  <div class="w3-center">
+    <p>© 2025 IES Caparrella</p>
+    <!--        <p>Partida Caparrella, 98, 25192 Lleida | 973 28 81 80</p>-->
+    <i class="fa fa-map-marker"></i>&nbsp; Partida Caparrella, 98, 25192 Lleida |&nbsp; <i class="fa fa-phone"></i>&nbsp; 973 28 81 80
+    <p><i class="fa fa-envelope"></i>&nbsp; iescaparrella@iescaparrella.cat</p>
+    <a href="https://www.facebook.com/iescaparrella" class="fa fa-facebook" style="margin-right: -10px;"></a>
+    <a href="https://twitter.com/iescaparrella" class="fa fa-twitter" style="margin-right: -10px;"></a>
+    <a href="https://www.instagram.com/iescaparrella/" class="fa fa-instagram" style="margin-right: -10px;"></a>
+    <a href="https://www.youtube.com/channel/UC9J6J9Z9Z9J9J9J9" class="fa fa-youtube-play" style="margin-left: 13px; color: white;"></a>
+    <p>
+      <a href="avis_legal.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large">AVIS LEGAL</a>
+    </p>
+  </div>
+
+</footer>
+
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
+
+</body>
+</html>
