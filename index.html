@@ -25,10 +25,8 @@
         <!-- Botó menú mòbil -->
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-green"
            href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu">
-            <button class="menu-toggle" aria-label="Obrir menú">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                <span class="visually-hidden">Obrir menú</span>
-            </button>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <span class="w3-large sr-only">MENU</span>
         </a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">
             <img src="Media/logo.webp" id="logo" alt="logo del IES Caparrella">
@@ -54,7 +52,10 @@
             </div>
         </div>
         <div class="w3-dropdown-hover w3-hide-small">
-            <a class="w3-button w3-padding-large">PLATAFORMES <i class="fa fa-caret-down"></i></a>
+            <a class="w3-button w3-padding-large" aria-label="PLATAFORMES (menú desplegable)">
+                PLATAFORMES
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
             <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
                 <a href="moodle.html" class="w3-bar-item w3-button">Moodle</a>
                 <a href="iEduca.html" class="w3-bar-item w3-button">iEduca</a>
