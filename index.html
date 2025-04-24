@@ -495,7 +495,7 @@
                     <p id="desc-curs-foto" class="sr-only">
                         Imatge d’una persona amb una càmera professional, enfocant un objecte en un entorn d’estudi fotogràfic. Representa el component pràctic del curs.
                     </p>
-                   
+
                 </div>
             </div>
 
@@ -509,18 +509,33 @@
 </div>
 
 <div class="w3-row-padding w3-margin-top">
-    <!-- Noticia 1 -->
+    <!-- Notícia 1 -->
     <div class="w3-third">
         <div class="w3-card-4 w3-margin w3-white">
-            <img src="Media/daily_news.jpg" alt="Alumnes participant en una sessió formativa de disseny web" style="width:100%; height:150px; object-fit:cover;">
+
+            <!-- Imatge amb descripció llarga associada -->
+            <img src="Media/daily_news.jpg"
+                 alt="Alumnes participant en una sessió formativa de disseny web"
+                 style="width:100%; height:150px; object-fit:cover;"
+                 aria-describedby="desc-noticia1">
+
             <div class="w3-container">
-                <h2><b>Noticia 1</b></h2>
-                <h6>Descripció breu, <span class="w3-opacity">Gener 2025</span></h6>
+                <h2>Notícia 1</h2>
+                <p><strong>Descripció breu</strong>, <span class="w3-opacity">Gener 2025</span></p>
                 <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus...</p>
-                <button class="w3-button w3-padding-small w3-white w3-border"><b>Llegeix més »</b></button>
+                <button class="w3-button w3-padding-small w3-white w3-border"
+                        aria-label="Llegeix més sobre la Notícia 1">Llegeix més »</button>
             </div>
+
+            <!-- Descripció llarga amagada -->
+            <p id="desc-noticia1" class="sr-only">
+                Fotografia d'un grup d'alumnes treballant en ordinadors durant una sessió de formació en disseny web.
+                Aquesta imatge il·lustra una de les activitats del projecte 'Digitalitza't 2025'.
+            </p>
+
         </div>
     </div>
+
 
     <!-- Noticia 2 -->
     <div class="w3-third">
