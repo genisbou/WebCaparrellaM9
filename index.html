@@ -173,9 +173,6 @@
          longdesc="descripcio-banner.html">
 </header>
 
-
-
-
 <div class="w3-container w3-center">
     <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">El centre</button>
     <button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Preinscripció i matrícula</button>
@@ -417,7 +414,7 @@
                 <div class="w3-card-4 w3-margin w3-hover-shadow-large">
                     <img src="Media/programacio.jpg" alt="Imatge representativa del curs de programació web" aria-description="descProgramacio" style="width:100%; height: 250px; object-fit: cover;">
                     <div class="w3-container w3-blue w3-padding-16">
-                        <h4 id="cursProgramacio" class="w3-center">Curs de Programació Web</h4>
+                        <h3 id="cursProgramacio" class="w3-center">Curs de Programació Web</h3>
                         <p class="w3-center">Aprèn a crear llocs web interactius amb HTML, CSS i JavaScript.</p>
                     </div>
                     <div class="w3-container w3-center">
@@ -438,7 +435,7 @@
                 <div class="w3-card-4 w3-margin w3-hover-shadow-large">
                     <img src="Media/dam.png" alt="Programador d'aplicacions mòbil treballant " style="width:100%; height: 250px; object-fit: cover;">
                     <div class="w3-container w3-blue w3-padding-16">
-                        <h4 class="w3-center">Curs d'aplicacions multiplataforma</h4>
+                        <h3 class="w3-center">Curs d'aplicacions multiplataforma</h3>
                         <p class="w3-center">Aprèn a desenvolupar aplicacions per a mòbils i escriptori amb Java i Kotlin.</p>
 
                     </div>
@@ -451,24 +448,33 @@
             <!-- Curs 3 -->
             <div class="w3-quarter">
                 <div class="w3-card-4 w3-margin w3-hover-shadow-large">
-                    <img src="Media/cicle_mecanica.jpg" alt="Mècanic revisant el motor d'un cotxe" style="width:100%; height: 250px; object-fit: cover;">
-                    <div class="w3-container w3-blue w3-padding-16">
-                        <h4 class="w3-center">Curs de Manteniment de vehicles</h4>
-                        <p class="w3-center">Aprèn a diagnosticar i reparar vehicles amb formació pràctica i teòrica.</p>
 
+                    <!-- Imatge amb descripció llarga associada via aria-describedby -->
+                    <img src="Media/cicle_mecanica.jpg"
+                         alt="Mecànic revisant el motor d'un cotxe"
+                         style="width:100%; height: 250px; object-fit: cover;"
+                         aria-describedby="desc-curs-mecanica">
+
+                    <div class="w3-container w3-blue w3-padding-16">
+                        <h3 class="w3-center">Curs de Manteniment de vehicles</h3>
+                        <p class="w3-center">Aprèn a diagnosticar i reparar vehicles amb formació pràctica i teòrica.</p>
                     </div>
-                    <div class="w3-container w3-center">
-                        <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Més informació</button>
-                    </div>
+
+                    <!-- Descripció llarga amagada per a lectors de pantalla -->
+                    <p id="desc-curs-mecanica" class="sr-only">
+                        Imatge d’un mecànic revisant el motor obert d’un vehicle en un taller. Aquesta imatge simbolitza l’aprenentatge pràctic del curs.
+                    </p>
+
                 </div>
             </div>
+
 
             <!-- Curs 4 -->
             <div class="w3-quarter">
                 <div class="w3-card-4 w3-margin w3-hover-shadow-large">
                     <img src="Media/cicle_fotografia.jpg" alt="Fotògraf amb una càmara" style="width:100%; height: 250px; object-fit: cover;">
                     <div class="w3-container w3-blue w3-padding-16">
-                        <h4 class="w3-center">Curs de Fotografia</h4>
+                        <h3 class="w3-center">Curs de Fotografia</h3>
                         <p class="w3-center">Domina les tècniques de la fotografia digital, des de la composició fins a l'edició.</p>
                     </div>
                     <div class="w3-container w3-center">
