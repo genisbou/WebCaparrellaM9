@@ -472,16 +472,31 @@
             <!-- Curs 4 -->
             <div class="w3-quarter">
                 <div class="w3-card-4 w3-margin w3-hover-shadow-large">
-                    <img src="Media/cicle_fotografia.jpg" alt="Fotògraf amb una càmara" style="width:100%; height: 250px; object-fit: cover;">
+
+                    <!-- Imatge amb descripció llarga associada -->
+                    <img src="Media/cicle_fotografia.jpg"
+                         alt="Fotògraf amb una càmera"
+                         style="width:100%; height: 250px; object-fit: cover;"
+                         aria-describedby="desc-curs-foto">
+
                     <div class="w3-container w3-blue w3-padding-16">
                         <h3 class="w3-center">Curs de Fotografia</h3>
                         <p class="w3-center">Domina les tècniques de la fotografia digital, des de la composició fins a l'edició.</p>
                     </div>
+
                     <div class="w3-container w3-center">
                         <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Més informació</button>
                     </div>
+
+                    <!-- Descripció llarga amagada per a lectors de pantalla -->
+                    <p id="desc-curs-foto" class="sr-only">
+                        Imatge d’una persona amb una càmera professional, enfocant un objecte en un entorn d’estudi fotogràfic. Representa el component pràctic del curs.
+                    </p>
+
                 </div>
             </div>
+
+        </div>
         </div>
     </div>
 </div>
