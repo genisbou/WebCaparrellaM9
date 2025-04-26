@@ -205,47 +205,35 @@
                 <h2>Contacta'ns</h2>
             </div>
             <form class="w3-container">
-                <p>
-                    <label>Nom</label>
-                    <label>
-                        <input class="w3-input" type="text">
-                    </label></p>
-                <p>
-                    <label>Correu electrònic</label>
-                    <label>
-                        <input class="w3-input" type="email">
-                    </label></p>
-                <p>
-                    <label>Assumpte</label>
-                    <label>
-                        <input class="w3-input" type="text">
-                    </label></p>
-                <p>
-                    <label>Missatge</label>
-                    <label>
-                        <textarea class="w3-input" rows="5"></textarea>
-                    </label>
-                </p>
+  <p>
+    <label for="nom">Nom</label>
+    <input class="w3-input" type="text" id="nom" name="nom">
+  </p>
 
-                <p>
-                    <label>
-                        <input class="w3-check" type="checkbox" checked="checked">
-                        Enviar una còpia del missatge a la meva adreça de correu
-                        <br>
-                        <input class="w3-check" type="checkbox" required>
-                        He llegit i accepto la <a href="politica_de_privacitat.html">política de privacitat</a>
+  <p>
+    <label for="email">Correu electrònic</label>
+    <input class="w3-input" type="email" id="email" name="email">
+  </p>
 
-                        <br>
-                        <br>
-                    </label>
-                    <button class="w3-button w3-blue">Send</button></p>
-            </form>
-        </div>
-    </div>
+  <p>
+    <label for="assumpte">Assumpte</label>
+    <input class="w3-input" type="text" id="assumpte" name="assumpte">
+  </p>
 
+  <p>
+    <label for="missatge">Missatge</label>
+    <textarea class="w3-input" rows="5" id="missatge" name="missatge"></textarea>
+  </p>
 
+  <p>
+    <input class="w3-check" type="checkbox" id="enviarCopia" name="enviarCopia" checked>
+    <label for="enviarCopia">Enviar una còpia del missatge a la meva adreça de correu</label>
+    <br>
+    <input class="w3-check" type="checkbox" id="accepto" name="accepto" required>
+    <label for="accepto">He llegit i accepto la <a href="politica_de_privacitat.html">política de privacitat</a></label>
+  </p>
+</form>
 
-        </div>
 
 
 <!-- Second Grid -->
